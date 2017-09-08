@@ -1,10 +1,9 @@
-# Ruby is Special!
+# Ruby is Special!  
 
 Some general notes, gotchas, and things I love about Ruby.
 
 ## Uniquely Ruby
-
-A few of the things that make Ruby different from other programming languages.
+ A few of the things that make Ruby different from other programming languages.
 
 ### Symbols
 
