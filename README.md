@@ -1,10 +1,19 @@
 # Ruby is Special!
 
-Some general notes, gotchas, and things I love about Ruby.
+Some general notes, gotchas, and things I love about Ruby. Note that this is a work in progress. I'll add to it as I get time, and as Ruby continues to unveil her mysterious wonders...
 
 ## Uniquely Ruby
 
 A few of the things that make Ruby different from other programming languages.
+
+### Everything is an Object
+
+That includes numbers; therefore numbers have methods associated with them. For instance, the methods `.times` and `.even?` as demonstrated below.
+
+```ruby
+3.times {print "Hola!"} # prints Hola!Hola!Hola!
+puts 12.even? # prints true
+```
 
 ### Symbols
 
@@ -134,4 +143,5 @@ A few Rails-specific notes/factoids.
 *Lots* of amazing resources informed this reference, including the following:
 
 [Head First Ruby](https://www.amazon.com/Head-First-Ruby-Brain-Friendly-Guide/dp/1449372651)
+
 [Ruby on Rails Tutorial](https://www.railstutorial.org/book)
