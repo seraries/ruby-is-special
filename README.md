@@ -87,6 +87,39 @@ end
 say_hello  # prints Hello!
 ```
 
+### Ternary Operator
+
+Ruby, like Java and many other languages, allows you to write a succinct "if/else" conditional statement using the ternary operator, like so:
+
+```ruby
+params[:session][:remember_me] == '1' ? remember(user) : forget(user)
+```
+
+An expression that uses the ternary operator consists of the following parts:
+
+```
+boolean? ? do_one_thing : do_something_else
+```
+
+If the boolean expression evaluates to true, do the thing listed immediately following the `?`; if it evaluates to false, do the thing listed after the `:`. 
+
+In Ruby, there are a couple other cool things you can do with the ternary operator. You can use it in an assignment:
+
+```ruby
+var = boolean? ? foo : bar
+```
+
+And you can use it as a function's return value:
+
+```ruby
+def foo
+  do_stuff
+  boolean? ? "bar" : "baz"
+end
+```
+
+Since Ruby implicitly returns the value of the last expression in a function, here the `foo` method returns "bar" or "baz" depending on whether boolean? is true or false.
+
 ## Gotcha!
 
 Unexpected things about Ruby. Good to know these things to avoid bugs/logical errors.
@@ -131,6 +164,16 @@ a = [8, 23, 15]
 puts a.sort!  # prints [8, 15, 23]
 puts a  # prints [8, 15, 23]
 ```
+
+### Assignment in a boolean clause
+
+Let's look at a potentially confusing statement:
+
+```ruby
+if (user_id = session[:user_id])
+```
+
+Note that this is not a comparison (which would use == instead of a single equals sign), but rather this means "If session of user id exists (while setting user id to session of user id)..."
 
 ## Rails Notes
 
