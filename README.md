@@ -1,5 +1,4 @@
-# Ruby is Special!
-
+# Ruby is Special!  
 Some general notes, gotchas, and things I love about Ruby. Note that this is a work in progress. I'll add to it as I get time, and as Ruby continues to unveil her mysterious wonders...
 
 ## Uniquely Ruby
